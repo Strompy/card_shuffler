@@ -48,12 +48,18 @@ end
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
+  # adds save_and_open debugger
+  gem 'launchy'
   gem 'selenium-webdriver'
+  # adds should validations
+  gem 'shoulda-matchers', '~> 4.0'
+  gem 'simplecov' #test coverage
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
 end
 
 group :development, :test do
+  gem 'pry'
   gem 'rspec-rails'
 end
 
