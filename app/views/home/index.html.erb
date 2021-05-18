@@ -1,0 +1,11 @@
+<h1>Card Shuffler</h1>
+
+<div class="deck">
+  <% @deck.cards.each do |card| %>
+    <div class="card">
+      <%= card.rank %>
+      <%= card.suit %>
+      <%= card.value %>
+    </div>
+  <% end %>
+</div>
