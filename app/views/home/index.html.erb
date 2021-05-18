@@ -6,7 +6,7 @@
   <div class="row">
     <% @deck.cards.each do |card| %>
       <div class="column">
-        <div class="card">
+        <div class="card <%= card.suit %>">
           <%= card.rank %>
           <%= card.suit %>
           <%= card.value %>
