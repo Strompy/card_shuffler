@@ -1,13 +1,17 @@
-<h1 ><%= link_to('Card Shuffler', root_path, class: "header")%></h1>
+<h1><%= link_to('Card Shuffler', root_path, class: "header")%></h1>
 
 <%= button_to('Shuffle', root_path, params: {shuffle: true}, method: :get) %>
 
 <div class="deck">
-  <% @deck.cards.each do |card| %>
-    <div class="card">
-      <%= card.rank %>
-      <%= card.suit %>
-      <%= card.value %>
-    </div>
-  <% end %>
+  <div class="row">
+    <% @deck.cards.each do |card| %>
+      <div class="column">
+        <div class="card">
+          <%= card.rank %>
+          <%= card.suit %>
+          <%= card.value %>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>
