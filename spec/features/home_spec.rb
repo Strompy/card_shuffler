@@ -13,6 +13,5 @@ RSpec.describe 'When a user visits the home page' do
       expect(page).to have_content('A')
       expect(page).to have_content('clubs')
     end
-    # expect(page).to have_button('Shuffle')
   end
 end
