@@ -6,7 +6,11 @@ class Deck
   end
 
   def shuffle
-    require "pry"; binding.pry
-    cards.shuffle!
+    i = cards.size
+    while i > 0
+      j = rand(i-1)
+      i -= 1
+      cards[i], cards[j] = cards[j], cards[i]
+    end
   end
 end
