@@ -14,4 +14,16 @@ RSpec.describe 'When a user visits the home page' do
       expect(page).to have_content('clubs')
     end
   end
+  it 'it has a shuffle button that shuffles the cards' do
+    visit root_path
+
+    expect(page).to have_button('Shuffle')
+    cards = all('.card')
+
+    click_button('Shuffle')
+    expect(current_path).to eq(root_path)
+
+    shuffled_cards = all('.cards')
+    expect(cards).to_not eq(shuffled_cards)
+  end
 end
