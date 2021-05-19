@@ -17,7 +17,7 @@ I chose to build with Ruby and Rails so that I could quickly spin up a simple ap
 
 I utilized test driven development and the test suit has full coverage of the (very small) app. To complement the test suit, I utilized Travis CI to help ensure quality in the production build. The production app is hosted on Heroku with continuous deployment based on the CI checks.
 
-Areas of improvement: First on my wishlist is to implement Javascript to shuffle the cards, instead of the current approach of refreshing the whole page and hitting up the database again. 
+Areas of improvement: First fix is to get all the card heights to be consistent. Right now they are slightly different due to the image size for each suit and I need some more CSS practice to get those working better. The big ticket item on my wishlist is to implement Javascript to shuffle the cards, instead of the current approach of refreshing the whole page and hitting up the database again. 
 
 
 
