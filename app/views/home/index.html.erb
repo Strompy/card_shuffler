@@ -3,16 +3,14 @@
 <%= button_to('Shuffle', root_path, params: {shuffle: true}, method: :get) %>
 
 <div class="deck">
-  <div class="row">
+  <div class="cards">
     <% @deck.cards.each do |card| %>
-      <div class="column">
+      <!-- <div class="column"> -->
         <div class="card <%= card.suit %>">
-          <%= image_tag "#{card.suit}.png" %>
           <%= card.rank %>
-          <%= card.suit %>
-          <%= card.value %>
+          <%= image_tag "#{card.suit}.png" %>
         </div>
-      </div>
+      <!-- </div> -->
     <% end %>
   </div>
 </div>
