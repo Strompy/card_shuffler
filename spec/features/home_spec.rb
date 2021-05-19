@@ -5,8 +5,8 @@ RSpec.describe 'When a user visits the home page' do
     visit root_path
     expect(page).to have_content('Card Shuffler')
 
-    # expect(page).to have_css('.card', count: 52)
-    expect(page).to have_css('.header')
+    expect(page).to have_css('.card', count: 52)
+    # expect(page).to have_css('.header')
     expect(page).to have_css('.card.hearts', count: 13)
     expect(page).to have_css('.card.clubs', count: 13)
     expect(page).to have_css('.card.spades', count: 13)
@@ -32,7 +32,7 @@ RSpec.describe 'When a user visits the home page' do
     click_button('Shuffle')
     expect(current_path).to eq(root_path)
 
-    # expect(page).to have_css('.card', count: 52)
+    expect(page).to have_css('.card', count: 52)
     expect(page).to have_css('.card.hearts', count: 13)
     expect(page).to have_css('.card.clubs', count: 13)
     expect(page).to have_css('.card.spades', count: 13)
