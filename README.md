@@ -13,7 +13,7 @@ Card Shuffler is a simple app to shuffle a standard deck of 52 cards. Click the 
 This application was built for a tech challenge. The prompt was simple: 
 > Please design and implement a card shuffler using the language of your choice.
 
-I chose to build with Ruby and Rails so that I could quickly spin up a simple app. I wanted to highlight some basics skills with creating a full stack web app but with an emphasis on back-end work. Ruby/Rails also offer a lot of built in tools to make things simpler, like the in-built `shuffle` method in Ruby. However for that I chose to implement my own version of the Fisher-Yates shuffle, to add some more fun and challenge to the project.
+I chose to build with Ruby and Rails so that I could quickly spin up a simple app. I wanted to highlight some basics skills with creating a full stack web app but with an emphasis on back-end work. Ruby/Rails also offer a lot of built in tools to make things simpler, like the in-built `shuffle` method in Ruby. However I chose to implement my own shuffle method after reading about the Fisher-Yates shuffle, to add some more fun and challenge to the project.
 
 I utilized test driven development and the test suit has full coverage of the (very small) app. To complement the test suit, I utilized Travis CI to help ensure quality in the production build. The production app is hosted on Heroku with continuous deployment based on the CI checks.
 
