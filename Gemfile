@@ -58,7 +58,7 @@ group :test do
   gem 'shoulda-matchers', '~> 4.0'
   gem 'simplecov' #test coverage
   # Easy installation and use of chromedriver to run system tests with Chrome
-  gem 'chromedriver-helper'
+  # gem 'chromedriver-helper'
 end
 
 group :development, :test do
