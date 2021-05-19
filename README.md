@@ -36,7 +36,7 @@ $ git clone git@github.com:Strompy/card_shuffler.git
 ```
 3. Navigate into the project directory
 ```
-$ cd card_cshuffler
+$ cd card_shuffler
 ```
 4. Install gems
 ```
