@@ -5,12 +5,10 @@
 <div class="deck">
   <div class="cards">
     <% @deck.cards.each do |card| %>
-      <!-- <div class="column"> -->
         <div class="card <%= card.suit %>">
           <%= card.rank %>
-          <%= image_tag "#{card.suit}.png" %>
+          <%= image_tag "#{card.suit}.png", alt: "#{card.suit}" %>
         </div>
-      <!-- </div> -->
     <% end %>
   </div>
 </div>
