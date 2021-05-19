@@ -6,6 +6,7 @@ RSpec.describe 'When a user visits the home page' do
     expect(page).to have_content('Card Shuffler')
 
     # expect(page).to have_css('.card', count: 52)
+    expect(page).to have_css('.header')
     expect(page).to have_css('.card.hearts', count: 13)
     expect(page).to have_css('.card.clubs', count: 13)
     expect(page).to have_css('.card.spades', count: 13)
