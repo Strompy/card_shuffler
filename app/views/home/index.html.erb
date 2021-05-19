@@ -7,6 +7,7 @@
     <% @deck.cards.each do |card| %>
       <div class="column">
         <div class="card <%= card.suit %>">
+          <%= image_tag "#{card.suit}.png" %>
           <%= card.rank %>
           <%= card.suit %>
           <%= card.value %>
