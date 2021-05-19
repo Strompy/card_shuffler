@@ -4,12 +4,14 @@ RSpec.describe 'When a user visits the home page' do
   it 'it displays a new ushuffled deck' do
     visit root_path
     expect(page).to have_content('Card Shuffler')
-    expect(page).to have_css('.card', count: 52)
-    expect(page).to have_css('.hearts', count: 13)
-    expect(page).to have_css('.clubs', count: 13)
-    expect(page).to have_css('.spades', count: 13)
-    expect(page).to have_css('.diamonds', count: 13)
 
+    using_wait_time 3 do
+      expect(page).to have_css('.card', count: 52)
+      expect(page).to have_css('.hearts', count: 13)
+      expect(page).to have_css('.clubs', count: 13)
+      expect(page).to have_css('.spades', count: 13)
+      expect(page).to have_css('.diamonds', count: 13)
+    end
     find('.card', match: :first) do
       expect(page).to have_content('2')
       expect(page).to have_css("img[alt=hearts]")
