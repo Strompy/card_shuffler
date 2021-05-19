@@ -9,7 +9,7 @@ Card Shuffler is a simple app to shuffle a standard deck of 52 cards. Click the 
 
 ![math gif](https://media.giphy.com/media/ne3xrYlWtQFtC/giphy.gif)
 
-### But why?
+## But why?
 This application was built for a tech challenge. The prompt was simple: 
 > Please design and implement a card shuffler using the language of your choice.
 
