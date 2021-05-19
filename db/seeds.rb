@@ -28,7 +28,11 @@ suits.each do |suit|
   ranks.each do |rank, value|
     Card.create(suit: suit, rank: rank, value: value)
   end
-  puts "Created #{suit}"
+  unless Rails.env.test?
+    puts "Created #{suit}"
+  end
 end
 
-puts "#{Card.count} cards created"
+unless Rails.env.test?
+  puts "#{Card.count} cards created"
+end
