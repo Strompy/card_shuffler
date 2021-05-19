@@ -4,11 +4,12 @@ RSpec.describe 'When a user visits the home page' do
   it 'it displays a new ushuffled deck' do
     visit root_path
     expect(page).to have_content('Card Shuffler')
+
     expect(page).to have_css('.card', count: 52)
-    expect(page).to have_css('.hearts', count: 13)
-    expect(page).to have_css('.clubs', count: 13)
-    expect(page).to have_css('.spades', count: 13)
-    expect(page).to have_css('.diamonds', count: 13)
+    expect(page).to have_css('.card.hearts', count: 13)
+    expect(page).to have_css('.card.clubs', count: 13)
+    expect(page).to have_css('.card.spades', count: 13)
+    expect(page).to have_css('.card.diamonds', count: 13)
 
     find('.card', match: :first) do
       expect(page).to have_content('2')
@@ -31,10 +32,10 @@ RSpec.describe 'When a user visits the home page' do
     expect(current_path).to eq(root_path)
 
     expect(page).to have_css('.card', count: 52)
-    expect(page).to have_css('.hearts', count: 13)
-    expect(page).to have_css('.clubs', count: 13)
-    expect(page).to have_css('.spades', count: 13)
-    expect(page).to have_css('.diamonds', count: 13)
+    expect(page).to have_css('.card.hearts', count: 13)
+    expect(page).to have_css('.card.clubs', count: 13)
+    expect(page).to have_css('.card.spades', count: 13)
+    expect(page).to have_css('.card.diamonds', count: 13)
 
     shuffled_cards = all('.card')
     expect(cards).to_not eq(shuffled_cards)
