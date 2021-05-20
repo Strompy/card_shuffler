@@ -1,6 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe 'When a user visits the home page' do
+  before(:each) do
+    Rails.application.load_seed
+  end
+  
   it 'it displays a new ushuffled deck' do
     visit root_path
     expect(page).to have_content('Card Shuffler')
