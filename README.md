@@ -17,7 +17,7 @@ I chose to build with Ruby and Rails so that I could quickly spin up a simple ap
 
 I utilized test driven development and the test suite has full coverage of the (very small) app. To complement the test suite, I utilized Travis CI to help ensure quality in the production build. The production app is hosted on Heroku with continuous deployment based on the CI checks.
 
-Areas of improvement: The big ticket item on my wishlist is to implement Javascript to shuffle the cards, instead of the current approach of refreshing the whole page and hitting up the database again for data that the view already has. 
+Areas of improvement: The big ticket item on my wishlist is to implement Javascript to shuffle the cards, instead of the current approach of refreshing the whole page and hitting up the database again for data that the view already has. Some other improvments include: displaying the rank in a more intersting way, add options for different types of decks than a standard 52 cards deck, finding a better hearts symbol (current one looks odd to me).
 
 
 ## Local Setup
